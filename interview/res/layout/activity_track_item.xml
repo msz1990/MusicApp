@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trackItem"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/trackId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/artistId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/collectionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:orientation="vertical" 
+        android:paddingTop="20dip"
+       >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:orientation="horizontal" 
+            android:layout_weight="5">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY" 
+                android:layout_weight="2" 
+                 />
+             <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1" 
+                 >
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:gravity="center"
+                     android:layout_weight="1" 
+                     android:text="Track:"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:gravity="center"
+                     android:layout_weight="1"
+                     android:text="Artist:"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:gravity="center"
+                     android:layout_weight="1" 
+                      android:text="Album:"/>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="3" 
+                 >
+
+                <TextView
+                    android:id="@+id/TrackName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                     android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/ArtistName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                     android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/CollectionName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                     android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_weight="1"
+            android:layout_marginTop="10dip">
+
+            <TextView
+                android:id="@+id/Style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Style" 
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/Releasedate"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Releasedate" 
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/TimeMill"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="TimeMill" 
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_weight="1"
+            android:layout_marginTop="10dip"
+            >
+
+            <TextView
+                android:id="@+id/CollectionPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="CollectionPrice" 
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/TrackPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="TrackPrice" 
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"
+        android:gravity="center"
+      />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:text="Preview"
+        android:gravity="center"
+        android:onClick="playMusic">
+        
+    </Button>
+
+</LinearLayout>
